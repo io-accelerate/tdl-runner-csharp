@@ -80,8 +80,11 @@ namespace BeFaster.App
                 .WithActionProvider(new UserInputAction(args))
                 .Start();
 
-            Console.Write("Press any key to continue . . . ");
-            Console.ReadKey();
+            if (Console.IsInputRedirected == false) // Ensure there is a console
+            {
+                Console.Write("Press any key to continue . . . ");
+                Console.ReadKey();
+            }
         }
     }
 }
