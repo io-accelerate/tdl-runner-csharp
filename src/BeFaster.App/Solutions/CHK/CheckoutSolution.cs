@@ -2,9 +2,9 @@
 
 namespace BeFaster.App.Solutions.CHK
 {
-    public static class CheckoutSolution
+    public class CheckoutSolution
     {
-        public static int ComputePrice(string? skus)
+        public int Checkout(string? skus)
         {
             throw new SolutionNotImplementedException();
         }

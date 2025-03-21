@@ -2,9 +2,9 @@
 
 namespace BeFaster.App.Solutions.FIZ
 {
-    public static class FizzBuzzSolution
+    public class FizzBuzzSolution
     {
-        public static string FizzBuzz(int number)
+        public string FizzBuzz(int number)
         {
             throw new SolutionNotImplementedException();
         }

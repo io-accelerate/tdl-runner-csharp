@@ -2,9 +2,9 @@
 
 namespace BeFaster.App.Solutions.SUM
 {
-    public static class SumSolution
+    public class SumSolution
     {
-        public static int Sum(int x, int y)
+        public int Sum(int x, int y)
         {
             throw new SolutionNotImplementedException();
         }
