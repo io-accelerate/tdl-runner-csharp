@@ -70,6 +70,17 @@ namespace BeFaster.App
                 WithSolutionFor("hello", entryPointMapping.Hello).
                 WithSolutionFor("fizz_buzz", entryPointMapping.FizzBuzz).
                 WithSolutionFor("checkout", entryPointMapping.Checkout).
+                WithSolutionFor("increment", entryPointMapping.Increment).
+                WithSolutionFor("to_uppercase", entryPointMapping.ToUppercase).
+                WithSolutionFor("letter_to_santa", entryPointMapping.LetterToSanta).
+                WithSolutionFor("count_lines", entryPointMapping.CountLines).
+                WithSolutionFor("array_sum", entryPointMapping.ArraySum).
+                WithSolutionFor("int_range", entryPointMapping.IntRange).
+                WithSolutionFor("filter_pass", entryPointMapping.FilterPass).
+                WithSolutionFor("inventory_add", entryPointMapping.InventoryAdd).
+                WithSolutionFor("inventory_size", entryPointMapping.InventorySize).
+                WithSolutionFor("inventory_get", entryPointMapping.InventoryGet).
+                WithSolutionFor("waves", entryPointMapping.Waves).
                 Create();
 
             ChallengeSession.ForRunner(runner)

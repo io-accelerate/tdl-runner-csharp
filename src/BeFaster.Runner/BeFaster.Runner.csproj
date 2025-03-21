@@ -9,6 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="TDL.Client" Version="0.29.1" />
+    <PackageReference Include="TDL.Client" Version="0.29.2" />
   </ItemGroup>
 </Project>
