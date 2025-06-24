@@ -71,6 +71,8 @@ namespace BeFaster.App
                 WithSolutionFor("fizz_buzz", entryPointMapping.FizzBuzz).
                 WithSolutionFor("checkout", entryPointMapping.Checkout).
                 WithSolutionFor("rabbit_hole", entryPointMapping.RabbitHole).
+                WithSolutionFor("amazing_maze", entryPointMapping.AmazingMaze).
+                WithSolutionFor("ultimate_maze", entryPointMapping.UltimateMaze).
                 WithSolutionFor("increment", entryPointMapping.Increment).
                 WithSolutionFor("to_uppercase", entryPointMapping.ToUppercase).
                 WithSolutionFor("letter_to_santa", entryPointMapping.LetterToSanta).
