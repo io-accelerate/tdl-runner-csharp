@@ -3,6 +3,9 @@
 using System.Collections.Generic;
 using TDL.Client.Queue.Abstractions;
 using BeFaster.App.Solutions.CHK;
+using BeFaster.App.Solutions.RBT;
+using BeFaster.App.Solutions.AMZ;
+using BeFaster.App.Solutions.ULT;
 using BeFaster.App.Solutions.DMO;
 using BeFaster.App.Solutions.FIZ;
 using BeFaster.App.Solutions.HLO;
@@ -19,6 +22,9 @@ namespace BeFaster.App
         private readonly HelloSolution helloSolution;
         private readonly FizzBuzzSolution fizzBuzzSolution;
         private readonly CheckoutSolution checkoutSolution;
+        private readonly RabbitHoleSolution rabbitHoleSolution;
+        private readonly AmazingSolution amazingSolution;
+        private readonly UltimateSolution ultimateSolution;
         private readonly DemoRound1Solution demoRound1Solution;
         private readonly DemoRound2Solution demoRound2Solution;
         private readonly DemoRound3Solution demoRound3Solution;
@@ -30,6 +36,9 @@ namespace BeFaster.App
             helloSolution = new HelloSolution();
             fizzBuzzSolution = new FizzBuzzSolution();
             checkoutSolution = new CheckoutSolution();
+            rabbitHoleSolution = new RabbitHoleSolution();
+            amazingSolution = new AmazingSolution();
+            ultimateSolution = new UltimateSolution();
             demoRound1Solution = new DemoRound1Solution();
             demoRound2Solution = new DemoRound2Solution();
             demoRound3Solution = new DemoRound3Solution();
@@ -47,6 +56,28 @@ namespace BeFaster.App
 
         public object Checkout(List<ParamAccessor> p) =>
             checkoutSolution.Checkout(p[0].GetAsString());
+
+        public object RabbitHole(List<ParamAccessor> p) =>
+            rabbitHoleSolution.RabbitHole(
+                p[0].GetAsInteger(),
+                p[1].GetAsInteger(),
+                p[2].GetAsString(),
+                p[3].GetAsMapOf<string>()
+            );
+
+        public object AmazingMaze(List<ParamAccessor> p) =>
+            amazingSolution.AmazingMaze(
+                p[0].GetAsInteger(),
+                p[1].GetAsInteger(),
+                p[2].GetAsMapOf<string>()
+            );
+
+        public object UltimateMaze(List<ParamAccessor> p) =>
+            ultimateSolution.UltimateMaze(
+                p[0].GetAsInteger(),
+                p[1].GetAsInteger(),
+                p[2].GetAsMapOf<string>()
+            );
 
         // Demo Round 1
 
